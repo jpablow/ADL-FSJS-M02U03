@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+}
+
+.filterbar {
+    grid-area: filterbar;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-areas:
+    "navbar"
+    "filterbar"
+    "main"
+    "footer";
+    grid-template-columns: auto;
+    grid-auto-rows: 50px 40px auto 40px;
+}
