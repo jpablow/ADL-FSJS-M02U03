@@ -20,17 +20,25 @@ p {
 
 .navbar_brand {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .navbar_brand img {
-    width: 100px;
+    max-width: 100px;
+    max-height: 30px;
+    height: auto;
 }
 
 .navbar_brand p {
     padding-left: 15px;
     font-size: x-large;
+}
+
+.navbar_menu p {
+    display: none;
+    text-align: center;
+    font-size: medium;
 }
 
 .navbar_menu img {
@@ -54,7 +62,7 @@ p {
 .filterbar select {
     width: 80%;
     height: 40px;
-    font-size: large;
+    font-size: larger;
     border-color: darkgrey;
     border-radius: 5px;
 }
@@ -86,13 +94,13 @@ p {
 }
 
 .prod_card img {
-    max-width: 400px;
+    max-width: 300px;
     padding: 20px 20px;
 }
 
 .prod_card p {
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
 }
 
 .prod_card_button {
@@ -124,6 +132,7 @@ p {
     background-color: #05141f;
     color: ghostwhite;
     font-size: x-large;
+    text-align: center;
 }
 
 .footer_icons img {
@@ -139,4 +148,84 @@ p {
     "footer";
     grid-template-columns: auto;
     grid-auto-rows: 120px auto auto 120px;
+}
+
+@media (min-width: 576px) {
+    .nav_bar {
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .navbar_brand img {
+        max-width: 70px;
+        max-height: 20px;
+        height: auto;
+    }
+
+    .navbar_brand p {
+        font-size: medium;
+    }
+
+    .navbar_menu p {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .navbar_menu img {
+        display: none;
+    }
+
+    .filterbar p {
+        font-size: medium;
+    }
+
+    .filterbar select {
+        font-size: larger;
+    }
+
+    .products {
+        grid-template-columns: repeat(2,auto);
+    }
+
+    .prod_card img {
+        max-width: 200px;
+    }
+
+    .prod_card p {
+        font-size: medium;
+    }
+
+    .filterbar select {
+        width: 95%;
+    }
+
+    .main_pages a {
+        font-size: medium;
+    }
+
+    .footer {
+        font-size: medium;
+    }
+
+    .footer_icons img {
+        width: 70px;
+    }
+
+    .grid_container {
+        grid-template-areas: 
+        "navbar filterbar"
+        "navbar main"
+        "footer main";
+        grid-template-columns: minmax(200px,15%) auto;
+        grid-auto-rows: auto auto 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .products {
+        grid-template-columns: repeat(4,auto);
+    }
 }
