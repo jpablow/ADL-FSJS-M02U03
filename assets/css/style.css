@@ -4,32 +4,127 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    margin: 0;
+}
+
 .navbar {
     grid-area: navbar;
     display: flex;
-    justify-content: center;
-    background-color: chartreuse;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0px 40px;
+}
+
+.navbar_brand {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.navbar_brand img {
+    width: 100px;
+}
+
+.navbar_brand p {
+    padding-left: 15px;
+    font-size: x-large;
+}
+
+.navbar_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_menu img {
+    width: 40px;
 }
 
 .filterbar {
     grid-area: filterbar;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    background-color: rgb(200, 200, 200);
+    padding: 20px 0;
+}
+
+.filterbar p {
+    font-size: larger;
+}
+
+.filterbar select {
+    width: 80%;
+    height: 40px;
+    font-size: large;
+    border-color: darkgrey;
+    border-radius: 5px;
 }
 
 .main {
     grid-area: main;
+    background-color: white;
     display: flex;
-    justify-content: center;
-    background-color: blue;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.products {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.prod_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    padding: 0 20px 20px 20px;
+}
+
+.prod_card img {
+    max-width: 400px;
+    padding: 20px 20px;
+}
+
+.prod_card p {
+    text-align: center;
+    font-size: larger;
+}
+
+.prod_card_button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .footer {
     grid-area: footer;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: #272c30;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+.footer_icons img {
+    width: 100px;
 }
 
 .grid_container {
@@ -40,5 +135,5 @@ body {
     "main"
     "footer";
     grid-template-columns: auto;
-    grid-auto-rows: 50px 40px auto 40px;
+    grid-auto-rows: 120px auto auto 120px;
 }
