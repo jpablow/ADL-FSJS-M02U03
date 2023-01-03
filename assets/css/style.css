@@ -8,10 +8,11 @@ p {
     margin: 0;
 }
 
-.navbar {
+.nav_bar {
     grid-area: navbar;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     padding: 0px 40px;
@@ -30,11 +31,6 @@ p {
 .navbar_brand p {
     padding-left: 15px;
     font-size: x-large;
-}
-
-.navbar_menu {
-    display: flex;
-    justify-content: space-between;
 }
 
 .navbar_menu img {
@@ -74,6 +70,7 @@ p {
 
 .products {
     display: grid;
+    grid-template-columns: auto;
     justify-content: space-evenly;
     gap: 20px;
     padding-bottom: 20px;
