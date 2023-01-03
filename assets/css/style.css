@@ -109,14 +109,20 @@ p {
     cursor: pointer;
 }
 
+.main_pages a {
+    background-color: #05141f;
+    color: ghostwhite;
+    font-size: x-large;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #272c30;
-    color: whitesmoke;
+    background-color: #05141f;
+    color: ghostwhite;
     font-size: x-large;
 }
 
