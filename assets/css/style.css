@@ -21,7 +21,6 @@ p {
 .navbar_brand {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .navbar_brand img {
@@ -50,7 +49,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgb(200, 200, 200);
     padding: 20px 0;
 }
@@ -62,7 +60,7 @@ p {
 .filterbar select {
     width: 80%;
     height: 40px;
-    font-size: larger;
+    font-size: large;
     border-color: darkgrey;
     border-radius: 5px;
 }
@@ -79,7 +77,6 @@ p {
 .products {
     display: grid;
     grid-template-columns: auto;
-    justify-content: space-evenly;
     gap: 20px;
     padding-bottom: 20px;
 }
@@ -123,11 +120,14 @@ p {
     font-size: x-large;
 }
 
+.main_pages ul {
+    margin: 0;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: #05141f;
     color: ghostwhite;
